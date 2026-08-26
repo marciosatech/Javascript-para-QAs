@@ -76,3 +76,22 @@ var v2 = 5
 
 var resultado = v1 == v2
 console.log (resultado)
+
+function soma (n1, n2) {
+    console.log(n1 + n2)
+}
+
+soma(2,5)
+
+function boasVindas(nome) {
+    alert (nome + ', seja bem-vindo(a)!')
+}
+
+boasVindas('Márcio')
+
+function somaretur (n1, n2) {
+    return n1 + n2
+}
+
+var resultadosomaretur = somaretur(1,2)
+console.log(resultadosomaretur)
