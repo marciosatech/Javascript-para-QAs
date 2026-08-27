@@ -130,3 +130,27 @@ function saque (valorSaque) {
 }
 
 saque(300)
+
+//ARRAYS//
+var gaveteiro = ['Meias', 'Camisetas', 'Blusas', 5]
+console.log(gaveteiro[3])
+
+gaveteiro.push('Cuecas') //Adiciona na lista
+console.log(gaveteiro)
+
+gaveteiro.pop() //Remove o ultimo item da lista
+console.log(gaveteiro)
+
+gaveteiro = gaveteiro.filter(function(item) {
+    return item !== 'Camisetas'
+    console.log(gaveteiro)    
+})
+
+console.log(gaveteiro)
+
+gaveteiro = gaveteiro.filter(function(item) {
+    return item == 'Blusas'
+    console.log(gaveteiro)    
+})
+
+console.log(gaveteiro)
