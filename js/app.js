@@ -95,3 +95,38 @@ function somaretur (n1, n2) {
 
 var resultadosomaretur = somaretur(1,2)
 console.log(resultadosomaretur)
+
+//CAIXA//
+// Cenário 1: Saque com sucesso
+// Dado que meu saldo é de 1000 reais 
+// Quando faço um saque de 500 reais 
+// Então o valor do saque deve deduizr do meu saldo
+
+// Cenário 2: Saque com valor superior ao saldo
+// Dado que meu saldo é de 1000 reais 
+// Quando faço um saque de 1001 reais 
+// Então não deve deduzir do meu saldo 
+// E deve mostrar uma mensagem de alerta informando que o valor é superior ao saldo 
+
+// Cenário 3: Saque com valor maximo
+// Dado que meu saldo é de 1000 reais 
+// E o valor máximo por operação é de 700 reais 
+// Quando faço um saque no valor de 701 reais 
+// Então não deve deduzir do meu saldo 
+// E deve mostrar uma mensagem de alerta informando que o valor é superior ao máximo permitido por operação
+
+var saldo = 1000
+
+function saque (valorSaque) {
+    
+    if (valorSaque > saldo) {
+        console.log("Valor do saque superior ao saldo")
+    } else if (valorSaque > 700) {
+        console.log('O valor máximo por operação é de R$ 700,00')
+    } else {
+        saldo = saldo - valorSaque 
+        console.log (`Saque de R$ ${valorSaque} realizado com sucesso. Saldo em conta R$ ${saldo}`)
+    }   
+}
+
+saque(300)
