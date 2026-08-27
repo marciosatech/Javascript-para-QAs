@@ -154,3 +154,18 @@ gaveteiro = gaveteiro.filter(function(item) {
 })
 
 console.log(gaveteiro)
+
+//CONTROLE DE REPETIÇÃO
+var frutas = ['Abacate', 'Uva', 'Morango']
+frutas.forEach(function(item){
+    console.log(item)
+})
+
+for (var item in frutas){
+    console.log(item) // Pega o indice de cada posição
+    console.log(frutas[item]) // Pega o valor de cada posição
+}
+
+for (var item = 0; item <= 10; item++) {
+    console.log(item)
+}
