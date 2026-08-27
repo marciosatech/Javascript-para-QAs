@@ -75,25 +75,25 @@ var v1 = 5
 var v2 = 5
 
 var resultado = v1 == v2
-console.log (resultado)
+console.log(resultado)
 
-function soma (n1, n2) {
+function soma(n1, n2) {
     console.log(n1 + n2)
 }
 
-soma(2,5)
+soma(2, 5)
 
 function boasVindas(nome) {
-    alert (nome + ', seja bem-vindo(a)!')
+    alert(nome + ', seja bem-vindo(a)!')
 }
 
 boasVindas('Márcio')
 
-function somaretur (n1, n2) {
+function somaretur(n1, n2) {
     return n1 + n2
 }
 
-var resultadosomaretur = somaretur(1,2)
+var resultadosomaretur = somaretur(1, 2)
 console.log(resultadosomaretur)
 
 //CAIXA//
@@ -117,16 +117,16 @@ console.log(resultadosomaretur)
 
 var saldo = 1000
 
-function saque (valorSaque) {
-    
+function saque(valorSaque) {
+
     if (valorSaque > saldo) {
         console.log("Valor do saque superior ao saldo")
     } else if (valorSaque > 700) {
         console.log('O valor máximo por operação é de R$ 700,00')
     } else {
-        saldo = saldo - valorSaque 
-        console.log (`Saque de R$ ${valorSaque} realizado com sucesso. Saldo em conta R$ ${saldo}`)
-    }   
+        saldo = saldo - valorSaque
+        console.log(`Saque de R$ ${valorSaque} realizado com sucesso. Saldo em conta R$ ${saldo}`)
+    }
 }
 
 saque(300)
@@ -141,27 +141,27 @@ console.log(gaveteiro)
 gaveteiro.pop() //Remove o ultimo item da lista
 console.log(gaveteiro)
 
-gaveteiro = gaveteiro.filter(function(item) {
+gaveteiro = gaveteiro.filter(function (item) {
     return item !== 'Camisetas'
-    console.log(gaveteiro)    
+    console.log(gaveteiro)
 })
 
 console.log(gaveteiro)
 
-gaveteiro = gaveteiro.filter(function(item) {
+gaveteiro = gaveteiro.filter(function (item) {
     return item == 'Blusas'
-    console.log(gaveteiro)    
+    console.log(gaveteiro)
 })
 
 console.log(gaveteiro)
 
 //CONTROLE DE REPETIÇÃO
 var frutas = ['Abacate', 'Uva', 'Morango']
-frutas.forEach(function(item){
+frutas.forEach(function (item) {
     console.log(item)
 })
 
-for (var item in frutas){
+for (var item in frutas) {
     console.log(item) // Pega o indice de cada posição
     console.log(frutas[item]) // Pega o valor de cada posição
 }
@@ -169,3 +169,16 @@ for (var item in frutas){
 for (var item = 0; item <= 10; item++) {
     console.log(item)
 }
+
+//OBJETOS
+yoda = {
+    nome: 'Mestre Yoda',
+    idade: 100,
+    jedi: true,
+    mostraraIdade: function () {
+        console.log(`A idade do ${this.nome} é ${this.idade} anos`)
+    }
+}
+
+console.log(yoda)
+yoda.mostraraIdade()
