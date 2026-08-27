@@ -182,3 +182,18 @@ yoda = {
 
 console.log(yoda)
 yoda.mostraraIdade()
+
+//CONSTANTES
+var teste = 'Márcio Sá'
+console.log(teste)
+
+teste = 'Sá Márcio'
+console.log(teste)
+
+
+const teste2 = 'Márcio Sá'
+console.log(teste2)
+
+// Nesse caso ao atribuir um NOVO valor a uma constante irá dar erro no compilador
+// teste2 = 'Sá Márcio'
+// console.log(teste2)
